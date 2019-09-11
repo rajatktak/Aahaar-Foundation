@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>login Form </title>
+	<!-- Meta-Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Tool Sign In Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+
+	<!-- //Meta-Tags -->
+	<!-- Stylesheets -->
+	<link href="css/style1.css" rel='stylesheet' type='text/css' />
+	<!--// Stylesheets -->
+	<!--fonts-->
+	<link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+	<!--//fonts-->
+</head>
+
+<body>
+	<h1>Login Form </h1>
+	<div class="w3ls-login box box--big">
+		<!-- form starts here -->
+		<form action="sign.php" method="POST">
+			<div class="agile-field-txt">
+
+			<div class="agile-field-txt">
+				<label>Email</label>
+				<input type="text" name="email" placeholder="Enter your Email" onblur="validateEmail(this.value);"  required="" />
+			</div>
+
+			<div class="agile-field-txt">
+				<label>Password</label>
+				<input type="password"  name="password" id="password" placeholder="Enter Password" required="" id="myInput"  onkeyup='check();' minlength="8" autocomplete="off" />
+			</div>
+
+
+ <br><br><br><span id='message'></span><br><br>
+
+
+			<input  id="submit"type="submit" value="SIGN IN"class="submit"  name="submit">
+
+		</form>
+	</div>
+	<canvas id="myChart" width="400" height="400"></canvas>
+
+</body>
+<script>
+var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = '<b> Passward matching </b>';
+    $('#submit').prop('disabled', false);
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = '<b> Passward is not matching</b>';
+        $('#submit').prop('disabled', true);
+  }
+}
+
+</script>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+</html>

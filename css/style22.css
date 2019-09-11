@@ -1,0 +1,115 @@
+body{
+	margin-top:80px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: Poppins;
+}
+p{
+	font-family: Roboto;
+}
+	.navbar-default{
+	background:rgba(0,0,0,0.5);
+	border:0;
+	font-family:Poppins;
+}
+
+.navbar-brand{
+	font-size:22px;
+	font-weight:bold ;
+	color:#fff !important;
+
+}
+
+#showcase h1{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+#showcase h2{
+	margin-left:30px;
+}
+#showcase img{
+	width:500px;
+	margin-right:60px;
+	height:400px;
+}
+nav ul li a{
+	color: #fff;}
+
+#client{
+	background:#f1f1f1;
+	padding:50px 0 30px 0;
+	text-align: center;
+	margin-top: 40px;
+}
+#butt11{
+	border-radius: 25px;
+	background:transparent;
+	border:solid white 4px;
+	width:150px;
+}
+#ccc{
+	border-radius: 25px;
+	background:transparent;
+	border:solid white 2px;
+	color:#fff;
+}
+#x{
+	color:#fff;
+}
+#list{
+	font-size:24px;
+}
+#client h2{
+	font-size:44px;
+	color:	#313131;
+}
+#client p{
+	font-size:28px;
+	color:black;
+	font-family:'josefin sans';
+}
+#imgg{
+	width:250px;
+	margin-right:60px;
+	height:400px;
+	margin-top:20px;
+
+}
+
+.info-right p{
+	font-size:18px;
+	color:black;
+	font-family:'josefin sans';
+}
+
+.info-left p{
+	font-size:18px;
+	color:black;
+	font-family:'josefin sans';
+}
+
+#about2{
+	margin:20px 0 60px 0;
+}
+
+#contact{
+	min-height: 400px;
+	background-image: url(../images/3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	padding:40px;
+	border-top:#333 7px solid;
+	border-bottom:#333 7px solid;
+	color:#fff;
+}
+
+#contact h1{
+	font-size:56px;
+}
+
+footer{
+	padding:70px;
+}
